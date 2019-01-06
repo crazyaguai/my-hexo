@@ -477,6 +477,7 @@ body {
 }
 
 .recent-posts .recent-post-item .index-tag-list .index-tag-list-item:hover {
+    color: #007fff;
     background-color: #efefef;
 }
 
@@ -1069,8 +1070,13 @@ body {
 
 pre,
 code {
-    background-color: #f6f6f6;
+    background-color: #f8f8f8;
     font-family: "Source Code Pro", "courier new", "Input Mono", "PT Mono", Consolas, Monaco, Menlo, monospace;
+}
+
+code, kbd, pre, samp {
+    font-family: "Source Code Pro", "courier new", "Input Mono", "PT Mono", Consolas, Monaco, Menlo, monospace;
+    font-size: 14px;
 }
 
 pre {
@@ -1089,10 +1095,10 @@ code {
 .highlight {
     display: block;
     overflow-x: auto;
-    color: #555;
-    font-size: 14px;
+    color: #000;
+    font-size: 16px;
     border-radius: 2px;
-    background-color: #f6f6f6;
+    background-color: #f8f8f8;
     overflow-y: hidden;
     margin: 20px 0;
 }

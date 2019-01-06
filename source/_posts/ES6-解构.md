@@ -7,7 +7,7 @@ categories: ES6
 
 对象和数组是JS里面常用的两种数据结构，ES6中添加了简化任务的新特性：结构，是一种打破数据结构，拆分成更小部分的过程。
 
-## 解构对象
+# 解构对象
 
 ```
 let obj = {
@@ -21,20 +21,16 @@ console.log(b)//2
 
 ### 解构赋值
 ```
-let c = 1
-let d = 1
-let obj = {
-    c: 4,
-    d: 5
-};//这个符号要加上
-({c,d} = obj)//一定要用小括号包上对象的解构赋值
-console.log(c)//4
-console.log(d)//5
+let a = 1,b = 1,obj = {a:2,b:2};//这里的;一定要加上，否则报错
+({a,b} = obj)//注意这里的括号要加上
+console.log(a)//2
+console.log(b)//2
 ```
 
 ### 如果值为null或者undefined会导致程序抛出错误
 ```
-let {a,b} = null//报错
+let {a,b} = null
+//报错:VM222:1 Uncaught TypeError: Cannot destructure property `a` of 'undefined' or 'null'.
 ```
 
 ### 默认值
@@ -49,10 +45,10 @@ console.log(b)//1
 
 ### 非同名局部变量赋值
 ```
-let node = {
+let obj = {
     type: '1'
 }
-let {type: localType} = node
+let {type: localType} = obj
 console.log(localType)//'1'
 ```
 
@@ -69,7 +65,7 @@ console.log(s)//4
 ```
 
 
-## 数组解构
+# 数组解构
 
 ```
 let arr = [1,2]
@@ -124,7 +120,7 @@ let [...arr2] = arr//不定元素
 ```
 
 
-## 混合解构
+# 混合解构
 ```
 let obj = {
     a: [1, 2, 3],
@@ -137,7 +133,7 @@ let {
 console.log(c,b)
 ```
 
-## 解构参数
+# 解构参数
 
 ```
 const defaultParams = {

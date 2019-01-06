@@ -14,11 +14,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
+      <file leaf-file-name="js-eventLoop.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_posts/js-eventLoop.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="12" selection-start-column="12" selection-end-column="12" />
+            <state relative-caret-position="87">
+              <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="js-节流与防抖.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_posts/js-节流与防抖.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ES6-async-await.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_posts/ES6-async-await.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="你不知道的js学习笔记.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_posts/你不知道的js学习笔记.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="js-深浅拷贝.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_posts/js-深浅拷贝.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="443">
+              <caret line="52" column="3" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -27,11 +63,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>default_layout</find>
-      <find>partial</find>
-      <find>menu</find>
-      <find>阅读</find>
-      <find>js</find>
       <find>阅读耗时</find>
       <find>readingTime</find>
       <find>date_xml</find>
@@ -57,16 +88,21 @@
       <find>@media</find>
       <find>-webkit-scrollbar</find>
       <find>scrollbar</find>
+      <find>index-tag-list-link</find>
+      <find>index-tag-list-item</find>
+      <find>#f6f6f6</find>
+      <find>code, kbd, pre, samp</find>
+      <find>1em</find>
     </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
     <dirStrings>
-      <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/themes/yxc/layout</dir>
       <dir>$PROJECT_DIR$/themes/yxc/layout/partials</dir>
-      <dir>$PROJECT_DIR$/themes/yxc</dir>
       <dir>$PROJECT_DIR$/themes/yxc/source/css</dir>
+      <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/themes/yxc</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -75,11 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/themes/yxc/source/css/highlight.less" />
-        <option value="$PROJECT_DIR$/themes/yxc/source/css/normalize.css" />
-        <option value="$PROJECT_DIR$/themes/yxc/source/css/variables.less" />
-        <option value="$PROJECT_DIR$/themes/yxc/layout/layout.ejs" />
         <option value="$PROJECT_DIR$/themes/yxc/layout/tag.ejs" />
         <option value="$PROJECT_DIR$/themes/yxc/source/js/xoxo.js" />
         <option value="$PROJECT_DIR$/themes/yxc/layout/post.ejs" />
@@ -104,16 +135,11 @@
         <option value="$PROJECT_DIR$/themes/yxc/layout/partials/footer.ejs" />
         <option value="$PROJECT_DIR$/themes/yxc/_config.yml" />
         <option value="$PROJECT_DIR$/themes/yxc/source/css/common.less" />
-        <option value="$PROJECT_DIR$/themes/yxc/source/css/xoxo.css" />
         <option value="$PROJECT_DIR$/themes/yxc/source/css/mixin.less" />
         <option value="$PROJECT_DIR$/source/_posts/创建Hexo-github博客流程.md" />
-        <option value="$PROJECT_DIR$/source/_posts/ES6-解构.md" />
-        <option value="$PROJECT_DIR$/source/_posts/ES6-扩展对象属性.md" />
         <option value="$PROJECT_DIR$/source/_posts/ES6-函数.md" />
         <option value="$PROJECT_DIR$/source/_posts/vue下拉组件使用键盘上下键选择.md" />
-        <option value="$PROJECT_DIR$/source/_posts/ES6-Set&amp;Map.md" />
         <option value="$PROJECT_DIR$/source/_posts/ES6-迭代器iterator&amp;生成器generator.md" />
-        <option value="$PROJECT_DIR$/source/_posts/ES6-改进数组功能.md" />
         <option value="$PROJECT_DIR$/../ES6/promise.html" />
         <option value="$PROJECT_DIR$/source/_posts/ES6-promise.md" />
         <option value="$PROJECT_DIR$/themes/yxc/source/css/core.less" />
@@ -123,6 +149,19 @@
         <option value="$PROJECT_DIR$/../../hexo/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/source/_posts/ES6-解构.md" />
+        <option value="$PROJECT_DIR$/source/_posts/ES6-扩展对象属性.md" />
+        <option value="$PROJECT_DIR$/source/_posts/ES6-改进数组功能.md" />
+        <option value="$PROJECT_DIR$/source/_posts/ES6-Set&amp;Map.md" />
+        <option value="$PROJECT_DIR$/source/_posts/Babel配置.md" />
+        <option value="$PROJECT_DIR$/source/_posts/js正则表达式.md" />
+        <option value="$PROJECT_DIR$/themes/yxc/source/css/xoxo.css" />
+        <option value="$PROJECT_DIR$/source/_posts/translateY-实现列表hover的box-shadow动画.md" />
+        <option value="$PROJECT_DIR$/source/_posts/js-eventLoop.md" />
+        <option value="$PROJECT_DIR$/source/_posts/js-节流与防抖.md" />
+        <option value="$PROJECT_DIR$/source/_posts/ES6-async-await.md" />
+        <option value="$PROJECT_DIR$/source/_posts/你不知道的js学习笔记.md" />
+        <option value="$PROJECT_DIR$/source/_posts/js-深浅拷贝.md" />
       </list>
     </option>
   </component>
@@ -142,10 +181,11 @@
       <path value="$PROJECT_DIR$/themes/yxc/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1440" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="60" />
+    <option name="y" value="23" />
+    <option name="width" value="1380" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -153,7 +193,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -161,10 +200,22 @@
               <item name="hexo-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="hexo-project" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="hexo-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hexo-project" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hexo-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hexo-project" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -216,27 +267,37 @@
       <workItem from="1534898277249" duration="2992000" />
       <workItem from="1534943611858" duration="997000" />
       <workItem from="1536243165928" duration="1783000" />
-      <workItem from="1537941806607" duration="2292000" />
+      <workItem from="1537941806607" duration="2895000" />
+      <workItem from="1538104178577" duration="614000" />
+      <workItem from="1538118749903" duration="236000" />
+      <workItem from="1541817395937" duration="1987000" />
+      <workItem from="1542183880381" duration="271000" />
+      <workItem from="1542205398451" duration="305000" />
+      <workItem from="1542810259427" duration="122000" />
+      <workItem from="1543744742174" duration="1583000" />
+      <workItem from="1544533277918" duration="39000" />
+      <workItem from="1546430701127" duration="1213000" />
+      <workItem from="1546743159356" duration="91000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42162000" />
+    <option name="totallyTimeSpent" value="49226000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1800948" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19732206" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32948717" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.1698881" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32179487" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -253,55 +314,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/tags/index.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/yxc/scripts/tags/center-quote.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/categories/index.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/search/index.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/yxc/layout/partials/recent-posts.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/yxc/layout/post.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/yxc/layout/tag.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="46" lean-forward="true" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/yxc/layout/layout.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
@@ -416,13 +428,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/yxc/source/css/xoxo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="211" selection-start-line="211" selection-end-line="211" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
@@ -451,13 +456,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/ES6-解构.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/ES6-函数.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -466,20 +464,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/ES6-迭代器iterator&amp;生成器generator.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/ES6-Set&amp;Map.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4611">
-          <caret line="159" column="28" lean-forward="true" selection-start-line="159" selection-start-column="28" selection-end-line="159" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/ES6-扩展对象属性.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="15" />
@@ -549,13 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/ES6-改进数组功能.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/vue下拉组件使用键盘上下键选择.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
@@ -570,12 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../hexo/README.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
@@ -585,8 +556,106 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        <state relative-caret-position="29">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/ES6-扩展对象属性.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2581">
+          <caret line="89" column="14" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/ES6-改进数组功能.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6467">
+          <caret line="223" column="17" selection-start-line="223" selection-start-column="17" selection-end-line="223" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/ES6-Set&amp;Map.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/ES6-class.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/Babel配置.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="193" column="3" lean-forward="true" selection-start-line="193" selection-start-column="3" selection-end-line="193" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/ES6-解构.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/yxc/source/css/xoxo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7411">
+          <caret line="1063" column="31" selection-start-line="1063" selection-start-column="31" selection-end-line="1063" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/translateY-实现列表hover的box-shadow动画.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="41" column="3" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/js正则表达式.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/js-eventLoop.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/js-节流与防抖.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/ES6-async-await.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/你不知道的js学习笔记.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/js-深浅拷贝.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="52" column="3" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
         </state>
       </provider>
     </entry>

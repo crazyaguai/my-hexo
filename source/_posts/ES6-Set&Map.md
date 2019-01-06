@@ -49,9 +49,8 @@ set2.forEach(function (val,k,set) {
 
 
 不能通过访问数组元素那样直接通过索引访问Set集合元素，需要转换成数组
-l
 ```
-et set3 = new Set([1,1,1,2,2,3,3])
+let set3 = new Set([1,1,1,2,2,3,3])
 let arr = [...set]//复制数组并且创建一个无重复元素的新数组
 ```
 ### Weak Set
