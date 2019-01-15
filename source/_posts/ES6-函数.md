@@ -10,6 +10,34 @@ ES6在ES5的基础上做了大量改进，使编程更加灵活，更少出错�
 
 ## 参数默认值
 
+- ES5非严格模式下，命名参数的变化会体现在arguments对象中
+```
+function a(b,c) {
+    console.log(b === arguments[0])//true
+    console.log(c === arguments[1])//true
+    b = 3
+    c = 3
+    //会同步
+    console.log(b === arguments[0])//true
+    console.log(c === arguments[1])//true
+}
+a(1,1)
+```
+- ES5严格模式下取消了对于arguments对象的同步行为
+```
+function a(b,c) {
+    'use strict'
+    console.log(b === arguments[0])//true
+    console.log(c === arguments[1])//true
+    b = 3
+    c = 3
+    //不会同步
+    console.log(b === arguments[0])//false
+    console.log(c === arguments[1])//false
+}
+a(1,1)
+```
+
 ```
 function defaultParam(a,b=1) {
 }
@@ -20,10 +48,10 @@ function defaultParam(a,b=1) {
 function Fun(a,b=1) {
     console.log(arguments)//不传b参数时，没有arguments[1]
     console.log(a === arguments[0])//true
-    console.log(b === arguments[1])//true
+    console.log(b === arguments[1])//false
     a = 2
     b = 2
-    console.log(arguments)
+    //不会同步
     console.log(a === arguments[0])//false
     console.log(b === arguments[1])//false
 }
@@ -31,7 +59,7 @@ Fun(1)
 ```
 
 ## 默认参数表达式
-注意如果忘记写小括号，则传入默认函数的引用
+- 注意如果忘记写小括号，则传入默认函数的引用
 
 ```
 let num = 1
@@ -73,6 +101,15 @@ function pick(object,...keys) {
 }
 pick({a:1,b:2},...['a','b'])
 ```
+- 对象的setter只能包含一个参数
+```
+let obj = {
+    set name(...arrs){
+
+    }
+}
+//报错：Uncaught SyntaxError: Setter function argument must not be a rest parameter
+```
 
 
 ### Function构造函数增强
@@ -93,7 +130,7 @@ Math.max.apply(null,numArr)//等同于这个，但是apply需要手动绑定this
 ## name属性
 * 1、函数表达式的属性名字比函数赋值的变量权重高
 * 2、getter函数名字有get
-* 3、调用bind生成函数名字有bind
+* 3、调用bind生成函数名字有bound
 
 ```
 function name2() {
@@ -112,6 +149,16 @@ console.log(name3.name)//bound name2
 ```
 
 ## 明确函数的多用途
+- ES5中判断函数被调用的方法，但是通过Person.call()或者Person.apply()方法调用就无法判断
+```
+function Person(name) {
+    if(this instanceof Person){
+        this.name = name
+    }else {
+        throw new Error('必须通过new关键字调用person')
+    }
+}
+```
 * 1、函数有[[Call]]和[[Construct]]方法，分表表示直接调用和new构造
 * 2、元属性new.target（判断函数是否通过new关键字调用）
 
@@ -128,7 +175,17 @@ new bbb()
 ```
 
 ## 块级函数
-* 块级函数（代码中块级函数会被提升至块的顶部，而使用let声明的变量不会）
+- ES5中处理块级函数，ES5严格模式中代码块内声明函数会报错
+```
+'use strict'
+if(true){
+    //抛出错误
+    function a() {
+
+    }
+}
+```
+* ES6严格模式下块级函数（代码中块级函数会被提升至块的顶部，而使用let声明的变量不会）
 
 ```
 if(true){
@@ -136,7 +193,20 @@ if(true){
     function a() {
 
     }
+    console.log(typeof b)//报错
+    let b = function () {
+
+    }
 }
+```
+- ES6非严格模式下，函数提升至外围函数或全局作用域的顶部
+```
+if(true){
+    function a() {
+
+    }
+}
+console.log(typeof a)//function
 ```
 ## 箭头函数
 * 1、没有this\super\arguments\ner.target绑定，箭头函数中的这些由外层最近一个非箭头函数决定
@@ -179,6 +249,9 @@ var a = function (b) {
 
 ## 尾调用优化
 尾调用指的是函数作为另一个函数的最后一条语句被执行
+
+ES6缩减了严格模式下尾调用栈的大小，如果满足以下条件，尾调用不在创建新栈，而是清除并重用当前栈。
+
 需要同时满足：
 * 1、尾调用不访问当前函数的变量
 * 2、在函数内部，尾调用是最后一条语句

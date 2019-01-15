@@ -213,7 +213,6 @@ footer .bottom-item:hover {
 html,
 body {
     font-size: 16px;
-    font-weight: 300;
 }
 
 body {
@@ -1046,7 +1045,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 1.0rem;
-    font-weight: 300;
     letter-spacing: 2px;
 }
 
