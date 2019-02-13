@@ -4,6 +4,7 @@ date: 2019-01-15 15:52:17
 tags: [js,数据类型检测]
 categories: js
 ---
+
 #### typeof
 - 返回一个表示数据类型的字符串
 - 返回结果包括：number、boolean、string、symbol、object、undefined、function 等 7 种数据类型，**但不能判断 null、array 等**
@@ -74,6 +75,7 @@ var func = new Function();
 
 typeof func; // It will return 'function'
 ```
+
 #### instanceof
 - instanceof 运算符用来测试一个对象在其原型链中是否存在一个构造函数的 prototype 属性
 ```
@@ -101,6 +103,7 @@ console.log(fn instanceof Object)// true
 ```
 Array.isArray([]);   // true
 ```
+
 #### 严格运算符 ===
 只能用于判断 null 和 undefined，因为这两种类型的值都是唯一的
 ```
@@ -108,6 +111,7 @@ var a = null
 typeof a // "object"
 a === null // true
 ```
+
 #### constructor
 - constructor 作用和 instanceof 非常相似。但 constructor 检测 Object 与 instanceof 不一样，**还可以处理基本数据类型的检测**。
 ```
@@ -121,6 +125,7 @@ console.log(reg.constructor===Object);//false
 ```
 - null 和 undefined 是无效的对象,不会有 constructor 存在。
 - 函数的 constructor 是不稳定的，这个主要体现在把类的原型进行重写。
+
 #### Object.prototype.toString.call()
 - 每个对象都有一个toString()方法，当该对象被表示为一个文本值时，或者一个对象以预期的字符串方式引用时自动调用。默认情况下，toString()方法被每个Object对象继承。如果此方法在自定义对象中未被覆盖，toString() 返回 "[object type]"，其中type是对象的类型。
 - 关于 toString
@@ -142,4 +147,5 @@ Object.prototype.toString.call(new Error()) ; // [object Error]
 Object.prototype.toString.call(document) ; // [object HTMLDocument]
 Object.prototype.toString.call(window) ; //[object global] window是全局对象global的引用
 ```
-##### 来自https://mp.weixin.qq.com/s/l4U4lVt_sz7lqT43aTuaTA
+#### 整理
+- 来自https://mp.weixin.qq.com/s/l4U4lVt_sz7lqT43aTuaTA
