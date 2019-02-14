@@ -622,12 +622,9 @@ body {
 }
 
 .page .tag-list .tag-list-item {
-    line-height: 20px;
     display: inline-block;
-    height: 20px;
     margin: 3px;
     padding: 0 10px;
-    color: #555;
     border-radius: 3px;
     background: #f6f6f6;
     min-width: 30px;
@@ -636,10 +633,19 @@ body {
     line-height: 30px;
     height: 30px;
     color: #2196F3;
+    position: relative;
 }
 
 .page .tag-list .tag-list-item a {
     color: #555;
+}
+.page .tag-list .tag-list-item a:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 .page .tag-list .tag-list-item:hover {
@@ -703,7 +709,6 @@ body {
     background-color: #fff;
     display: block;
     font-size: 0;
-    margin: 15px auto;
     max-width: 850px;
     padding: 0 10px;
     position: relative;
@@ -774,7 +779,8 @@ body {
         overflow-y: auto;
         overflow-x: auto;
         border-radius: 4px;
-        background-color: #F6F6F6;
+        border: 1px solid #eee;
+        background: #fff;
     }
 }
 

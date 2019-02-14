@@ -14,29 +14,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_config.yml">
+      <file leaf-file-name="xxoo.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/yxc/source/css/xxoo.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="65" column="21" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+            <state relative-caret-position="362">
+              <caret line="641" selection-start-line="641" selection-end-line="648" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="xoxo.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/yxc/source/css/xoxo.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="985" column="17" selection-start-line="985" selection-start-column="17" selection-end-line="985" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="highlight.less" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/yxc/source/css/highlight.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/yxc/source/css/common.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="105" column="38" lean-forward="true" selection-start-line="105" selection-start-column="38" selection-end-line="105" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="recent-posts.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/yxc/layout/partials/recent-posts.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+            <state relative-caret-position="31">
+              <caret line="413" column="9" selection-start-line="413" selection-start-column="9" selection-end-line="413" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -45,8 +54,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>font-weight: 300;</find>
-      <find>padding-left: 2rem</find>
       <find>li</find>
       <find>page</find>
       <find>archive-year-wrap</find>
@@ -63,18 +70,20 @@
       <find>.page</find>
       <find>post</find>
       <find>category-list</find>
-      <find>tag-list-item</find>
       <find>category-list-link</find>
       <find>.page li</find>
       <find>recent-posts</find>
       <find>post-nav</find>
       <find>10</find>
       <find>阅读</find>
-      <find>toc-article</find>
       <find>toc-container</find>
       <find>#8871FF</find>
       <find>category-list-item</find>
       <find>.container</find>
+      <find>tag-list-item</find>
+      <find>position</find>
+      <find>.post-nav</find>
+      <find>toc-article</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -84,9 +93,9 @@
       <dir>$PROJECT_DIR$/themes/yxc/layout/partials</dir>
       <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/themes</dir>
-      <dir>$PROJECT_DIR$/themes/yxc/source/css</dir>
       <dir>$PROJECT_DIR$/themes/yxc/scripts</dir>
       <dir>$PROJECT_DIR$/themes/yxc</dir>
+      <dir>$PROJECT_DIR$/themes/yxc/source/css</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -140,12 +149,12 @@
         <option value="$PROJECT_DIR$/themes/yxc/source/css/core.less" />
         <option value="$PROJECT_DIR$/../../test.html" />
         <option value="$PROJECT_DIR$/themes/yxc/_config.yml" />
-        <option value="$PROJECT_DIR$/themes/yxc/source/css/xxoo.css" />
         <option value="$PROJECT_DIR$/themes/yxc/layout/page.ejs" />
-        <option value="$PROJECT_DIR$/themes/yxc/source/css/xoxo.css" />
         <option value="$PROJECT_DIR$/themes/yxc/layout/partials/recent-posts.ejs" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/themes/yxc/source/css/common.less" />
+        <option value="$PROJECT_DIR$/themes/yxc/source/css/xxoo.css" />
+        <option value="$PROJECT_DIR$/themes/yxc/source/css/xoxo.css" />
       </list>
     </option>
   </component>
@@ -165,7 +174,7 @@
       <path value="$PROJECT_DIR$/themes/yxc/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="1440" />
     <option name="y" value="23" />
     <option name="width" value="1920" />
@@ -202,6 +211,21 @@
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="yxc" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hexo-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hexo-project" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="yxc" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hexo-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hexo-project" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="yxc" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -278,16 +302,15 @@
       <workItem from="1550027159041" duration="289000" />
       <workItem from="1550036259148" duration="17464000" />
       <workItem from="1550112800355" duration="1395000" />
-      <workItem from="1550122302081" duration="4519000" />
+      <workItem from="1550122302081" duration="6332000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82596000" />
+    <option name="totallyTimeSpent" value="84409000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="23" width="1920" height="1057" extended-state="6" />
-    <editor active="true" />
+    <frame x="1440" y="23" width="1920" height="1057" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14744602" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -334,7 +357,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/_posts/vue下拉组件使用键盘上下键选择.md" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
@@ -648,20 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/yxc/source/css/xxoo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="188" column="1" lean-forward="true" selection-start-line="188" selection-start-column="1" selection-end-line="188" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/yxc/source/css/xoxo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="807" lean-forward="true" selection-start-line="807" selection-end-line="807" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/yxc/layout/partials/recent-posts.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
@@ -678,8 +686,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/yxc/source/css/common.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="105" column="38" lean-forward="true" selection-start-line="105" selection-start-column="38" selection-end-line="105" selection-end-column="38" />
+        <state relative-caret-position="31">
+          <caret line="413" column="9" selection-start-line="413" selection-start-column="9" selection-end-line="413" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/yxc/source/css/xxoo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="641" selection-start-line="641" selection-end-line="648" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/yxc/source/css/xoxo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="985" column="17" selection-start-line="985" selection-start-column="17" selection-end-line="985" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/yxc/source/css/highlight.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
         </state>
       </provider>
     </entry>
