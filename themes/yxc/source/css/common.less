@@ -103,7 +103,7 @@ body {
     padding-top: @padding-top;
     margin: 0 auto;
     max-width: 1000px;
-    min-height: calc(~"100vh - 120px");
+    min-height: calc(~"100vh - 85px");
     @media screen and (min-width: @xl-width) {
         max-width: 880px;
     }
@@ -113,7 +113,7 @@ body {
 .recent-posts {
     margin: 0 auto;
     @media (max-width: @sm-width) {
-        padding: 10px 20px;
+        padding: 5px;
     }
     max-width: @index-width;
     .recent-post-item {
@@ -215,6 +215,8 @@ body {
     .toc-container {
         .toc-article {
             display: none;
+            border: 1px solid #eee;
+            background: #fff;
             a:hover {
                 color: @light-blue;
             }
@@ -230,7 +232,8 @@ body {
                 overflow-y: auto;
                 overflow-x: auto;
                 border-radius: 4px;
-                background-color: #F6F6F6;
+                border: 1px solid #eee;
+                background: #fff;
             }
             @media screen and (max-width: 1260px) {
                 display: none !important;
@@ -453,7 +456,6 @@ body {
     background-color: #fff;
     display: block;
     font-size: 0;
-    margin: 15px auto;
     max-width: @post-width - 30;
     padding: 0 10px;
     position: relative;

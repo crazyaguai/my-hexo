@@ -199,7 +199,6 @@ body {
     flex-direction: row;
     display: -ms-flexbox;
     display: flex;
-    background: #fefefe;
     overflow-y: scroll;
 }
 
@@ -293,7 +292,7 @@ body {
     padding-top: 60px;
     margin: 0 auto;
     max-width: 1000px;
-    min-height: calc(100vh - 120px);
+    min-height: calc(100vh - 85px);
 }
 
 @media screen and (min-width: 1280px) {
@@ -314,10 +313,6 @@ body {
 }
 
 .recent-posts .recent-post-item {
-    margin: 15px auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-top: none;
 }
 
 .recent-posts .recent-post-item .post-excerpt {

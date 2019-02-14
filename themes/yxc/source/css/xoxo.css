@@ -30,7 +30,7 @@ ol,
 ul,
 dd,
 dl {
-    /*padding-left: 2rem;*/
+    padding-left: 2rem;
 }
 
 h1 {
@@ -100,19 +100,17 @@ em {
 }
 
 footer {
-    width: 60%;
-    max-width: 840px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #fff;
     border-top: 0.5px solid #eee;
     padding-bottom: 1rem !important;
     padding-top: 1rem !important;
-    margin-top: 2rem !important;
+    margin-top: 1rem !important;
     color: #999;
     font-size: 12px;
     position: relative;
     z-index: 1024;
+    background: #fff;
 }
 
 footer .bottom-item {
@@ -219,7 +217,7 @@ body {
     color: #202020;
     line-height: 1.8rem;
     margin: 0;
-    background: #fff;
+    background: #F8F6FC;
 }
 
 .nav-container {
@@ -230,6 +228,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     width: 100%;
+    background: #fff;
 }
 
 .nav-container .home-menu {
@@ -386,7 +385,7 @@ body {
     padding-top: 60px;
     margin: 0 auto;
     max-width: 1000px;
-    min-height: calc(100vh - 120px);
+    min-height: calc(100vh - 85px);
     width: 100%;
 }
 
@@ -398,20 +397,27 @@ body {
 
 .recent-posts {
     margin: 0 auto;
-    max-width: 800px;
 }
 
 @media (max-width: 576px) {
     .recent-posts {
-        padding: 10px 20px;
+        padding: 5px;
     }
 }
 
 .recent-posts .recent-post-item {
-    margin: 15px auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-top: none;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    padding: 7px 20px;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+    transition: .3s;
+}
+.recent-posts .recent-post-item:hover {
+    cursor: pointer;
+    border: 1px solid #D4D0FF;
+    box-shadow: 0 2px 4px 0 #D4D0FF;
+    transform: translateY(-2px);
 }
 
 .recent-posts .recent-post-item .post-excerpt {
@@ -487,6 +493,7 @@ body {
 .page-nav {
     margin: 10px 0 0;
     padding: 10px 0 10px;
+    background: #fff;
 }
 
 .page-nav .page-number {
@@ -797,7 +804,6 @@ body {
 }
 
 .page li {
-    padding: .25rem 0;
 }
 
 .page ul {
@@ -805,29 +811,26 @@ body {
 }
 
 .page .tag-list .tag-list-item {
-    line-height: 20px;
     display: inline-block;
-    height: 20px;
-    margin: 3px;
-    padding: 0 10px;
-    color: #555;
-    border-radius: 3px;
-    background: #f6f6f6;
+    margin: 7px;
+    padding: 0 30px;
+    border-radius: 4px;
+    background: #8871FF;
     min-width: 30px;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
-    line-height: 30px;
-    height: 30px;
-    color: #2196F3;
+    line-height: 50px;
+    height: 50px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,.25);
+    color: #fff;
 }
 
 .page .tag-list .tag-list-item a {
-    color: #555;
+    color: #fff;
 }
 
 .page .tag-list .tag-list-item:hover {
-    color: #555;
-    background: #efefef;
+    cursor: pointer;
 }
 
 .page .tag-list .tag-list-item .tag-list-link {
@@ -836,7 +839,6 @@ body {
 }
 
 .page .tag-list .tag-list-item:hover {
-    color: #2196F3;
 }
 
 .tag-page {
@@ -862,7 +864,18 @@ body {
 }
 
 .tag-page .tag-item {
-    padding: .5rem 0;
+    padding: 7px 20px;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+    transition: .3s;
+}
+.tag-page .tag-item:hover {
+    cursor: pointer;
+    border: 1px solid #D4D0FF;
+    box-shadow: 0 2px 4px 0 #D4D0FF;
+    transform: translateY(-2px);
 }
 
 .tag-page .tag-item time {
@@ -936,7 +949,24 @@ body {
 }
 
 .category-list {
-    list-style: upper-alpha;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category-list-item{
+    display: inline-block;
+    margin: 7px;
+    padding: 0 30px;
+    border-radius: 4px;
+    background: #8871FF;
+    min-width: 30px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,.25);
+    color: #fff;
 }
 
 .category-list ol,
@@ -946,16 +976,15 @@ body {
 }
 
 .category-list .category-list-link {
-    color: #202020 !important;
+    color: #fff!important;
 }
 
 .category-list .category-list-link:hover {
-    color: #2196F3;
 }
 
 .category-list .category-list-count {
     padding-left: 1rem;
-    color: #2196F3;
+    color: #fff;
 }
 
 .disqus-comments {
