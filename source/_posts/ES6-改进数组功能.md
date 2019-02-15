@@ -235,3 +235,10 @@ c_arr.copyWithin(2,0)
 #### 定型数组
 - 用于处理数值类型数据专用的数组
 - [定型数组](http://www.shaoqun.com/a/318331.html)
+
+#### Array.prototype.includes()
+- ES7语法
+```
+let val = [1,2,3]
+console.log(val.includes(1))//true
+```

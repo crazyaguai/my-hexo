@@ -33,6 +33,10 @@ dl {
     padding-left: 2rem;
 }
 
+li{
+    line-height: 30px;
+}
+
 h1 {
     font-size: 1.5rem;
 }
