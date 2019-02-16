@@ -14,20 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.styl" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.styl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/git_them/source/css/main.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            <state relative-caret-position="270">
+              <caret line="489" column="39" selection-start-line="489" selection-start-column="39" selection-end-line="489" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="code.styl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="code.styl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/git_them/source/css/code.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+            <state relative-caret-position="-385">
+              <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -36,7 +36,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>li</find>
       <find>padding-left: 2rem;</find>
       <find>2rem</find>
       <find>text-align: center !important;</find>
@@ -66,6 +65,7 @@
       <find>tag</find>
       <find>highlight</find>
       <find>-15px</find>
+      <find>25px</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -141,8 +141,8 @@
         <option value="$PROJECT_DIR$/source/_posts/webpack-搭建环境以及相关优化.md" />
         <option value="$PROJECT_DIR$/source/_posts/webpack-打包文件相关.md" />
         <option value="$PROJECT_DIR$/source/_posts/webpack-简介以及相关概念.md" />
-        <option value="$PROJECT_DIR$/themes/git_them/source/css/main.styl" />
         <option value="$PROJECT_DIR$/themes/git_them/source/css/code.styl" />
+        <option value="$PROJECT_DIR$/themes/git_them/source/css/main.styl" />
       </list>
     </option>
   </component>
@@ -296,18 +296,18 @@
       <workItem from="1550190032922" duration="3145000" />
       <workItem from="1550224822495" duration="885000" />
       <workItem from="1550234263877" duration="249000" />
-      <workItem from="1550317068789" duration="6155000" />
+      <workItem from="1550317068789" duration="6542000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112540000" />
+    <option name="totallyTimeSpent" value="112927000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1862" y="-242" width="1862" height="1177" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19989136" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19989136" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -315,7 +315,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32916668" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.17592593" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.17592593" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -683,17 +683,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/git_them/source/css/main.styl">
+    <entry file="file://$PROJECT_DIR$/themes/git_them/source/css/code.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        <state relative-caret-position="-385">
+          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/git_them/source/css/code.styl">
+    <entry file="file://$PROJECT_DIR$/themes/git_them/source/css/main.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+        <state relative-caret-position="270">
+          <caret line="489" column="39" selection-start-line="489" selection-start-column="39" selection-end-line="489" selection-end-column="39" />
         </state>
       </provider>
     </entry>
