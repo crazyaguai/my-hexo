@@ -13,7 +13,7 @@ menu:
  tags: true
  categories: true
 
-rss_dir: atom.xml
+# rss_dir:
 
 # widget
 ga: # google analytics tracking code UA-XXXXXXX-X

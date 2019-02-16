@@ -14,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_config.yml">
+      <file leaf-file-name="ES6-模块化.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_posts/ES6-模块化.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="75" column="10" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="10" />
+            <state relative-caret-position="324">
+              <caret line="95" column="3" lean-forward="true" selection-start-line="95" selection-start-column="3" selection-end-line="95" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -27,13 +27,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>阅读全文</find>
-      <find>576</find>
-      <find>page-number</find>
-      <find>post-content</find>
-      <find>recent-post-item</find>
-      <find>.page</find>
-      <find>post</find>
       <find>category-list</find>
       <find>category-list-link</find>
       <find>.page li</find>
@@ -57,6 +50,13 @@
       <find>padding-left: 2rem;</find>
       <find>2rem</find>
       <find>text-align: center !important;</find>
+      <find>replica-app</find>
+      <find>l/script</find>
+      <find>moment(</find>
+      <find>/calendar</find>
+      <find>%&gt;</find>
+      <find>.date</find>
+      <find>moment</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -67,9 +67,11 @@
       <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/themes</dir>
       <dir>$PROJECT_DIR$/themes/yxc/scripts</dir>
-      <dir>$PROJECT_DIR$/themes/yxc</dir>
       <dir>$PROJECT_DIR$/themes/yxc/source</dir>
       <dir>$PROJECT_DIR$/themes/yxc/source/css</dir>
+      <dir>$PROJECT_DIR$/themes/git_them/layout/_partial</dir>
+      <dir>$PROJECT_DIR$/themes/yxc</dir>
+      <dir>$PROJECT_DIR$/themes/git_them/layout</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -78,19 +80,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/source/_posts/创建Hexo-github博客流程.md" />
-        <option value="$PROJECT_DIR$/source/_posts/vue下拉组件使用键盘上下键选择.md" />
-        <option value="$PROJECT_DIR$/../ES6/promise.html" />
-        <option value="$PROJECT_DIR$/source/_posts/webpack配置全局常量.md" />
-        <option value="$PROJECT_DIR$/../../hexo/README.md" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/source/_posts/ES6-解构.md" />
-        <option value="$PROJECT_DIR$/source/_posts/ES6-Set&amp;Map.md" />
-        <option value="$PROJECT_DIR$/source/_posts/Babel配置.md" />
-        <option value="$PROJECT_DIR$/source/_posts/js正则表达式.md" />
-        <option value="$PROJECT_DIR$/source/_posts/translateY-实现列表hover的box-shadow动画.md" />
-        <option value="$PROJECT_DIR$/source/_posts/js-eventLoop.md" />
         <option value="$PROJECT_DIR$/source/_posts/js-节流与防抖.md" />
         <option value="$PROJECT_DIR$/source/_posts/ES6-async-await.md" />
         <option value="$PROJECT_DIR$/source/_posts/你不知道的js学习笔记.md" />
@@ -120,7 +109,6 @@
         <option value="$PROJECT_DIR$/source/_posts/性能优化.md" />
         <option value="$PROJECT_DIR$/source/_posts/ES6-改进数组功能.md" />
         <option value="$PROJECT_DIR$/source/_posts/ES6-代理-Proxy-与反射-Reflection.md" />
-        <option value="$PROJECT_DIR$/source/_posts/ES6-模块化.md" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/themes/yxc/gulpfile.js" />
         <option value="$PROJECT_DIR$/themes/yxc/source/css/highlight.less" />
@@ -128,7 +116,21 @@
         <option value="$PROJECT_DIR$/themes/yxc/source/css/common.less" />
         <option value="$PROJECT_DIR$/themes/yxc/source/css/xxoo.css" />
         <option value="$PROJECT_DIR$/themes/yxc/source/css/core.less" />
+        <option value="$PROJECT_DIR$/themes/git_them/layout/index.ejs" />
+        <option value="$PROJECT_DIR$/themes/git_them/layout/_partial/script.ejs" />
+        <option value="$PROJECT_DIR$/themes/git_them/layout/layout.ejs" />
+        <option value="$PROJECT_DIR$/themes/git_them/source/js/vue.min.js" />
+        <option value="$PROJECT_DIR$/themes/git_them/source/js/moment.min.js" />
+        <option value="$PROJECT_DIR$/themes/git_them/layout/_partial/navbar.ejs" />
         <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/themes/git_them/layout/_partial/calendar.ejs" />
+        <option value="$PROJECT_DIR$/themes/git_them/layout/_partial/article.ejs" />
+        <option value="$PROJECT_DIR$/themes/yxc/layout/partials/archive-post.ejs" />
+        <option value="$PROJECT_DIR$/themes/git_them/layout/archive.ejs" />
+        <option value="$PROJECT_DIR$/themes/git_them/layout/_partial/head.ejs" />
+        <option value="$PROJECT_DIR$/themes/git_them/source/js/main.js" />
+        <option value="$PROJECT_DIR$/themes/git_them/layout/_partial/footer.ejs" />
+        <option value="$PROJECT_DIR$/source/_posts/ES6-模块化.md" />
       </list>
     </option>
   </component>
@@ -166,6 +168,17 @@
             <path>
               <item name="hexo-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="hexo-project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hexo-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hexo-project" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hexo-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hexo-project" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -252,47 +265,57 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89643000" />
+    <option name="totallyTimeSpent" value="96258000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1862" y="-242" width="1862" height="1177" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1347094" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14869626" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32916668" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5002716" side_tool="true" weight="0.24444444" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32916668" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.24444444" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4997284" visible="true" weight="0.27051282" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1347094" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32916668" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.24444444" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20115851" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32916668" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.275" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32916668" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -303,125 +326,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/yxc/source/css/xxoo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="1" column="34" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/yxc/source/css/highlight.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4640">
-          <caret line="160" column="1" selection-start-line="160" selection-start-column="1" selection-end-line="160" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/yxc/source/css/core.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1102">
-          <caret line="38" column="3" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/flexible布局以及1px边框解决方案.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="127" column="3" selection-start-line="127" selection-start-column="3" selection-end-line="127" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/js-file相关.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="238" lean-forward="true" selection-start-line="238" selection-end-line="238" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/视口概念.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/js-深浅拷贝.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/postcss相关.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/Babel配置.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/decimal处理数字问题.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2987">
-          <caret line="103" column="9" lean-forward="true" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/ES6-Set&amp;Map.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/浏览器缓存.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/ES6-函数.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5350">
-          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/js数据类型检测.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="135" column="3" selection-start-line="135" selection-start-column="3" selection-end-line="135" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/ES6-迭代器iterator&amp;生成器generator.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="305" selection-start-line="305" selection-end-line="305" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/ES6-promise.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12557">
-          <caret line="433" column="3" selection-start-line="433" selection-start-column="3" selection-end-line="433" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/ES6-class.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1048">
@@ -518,27 +422,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/ES6-代理-Proxy-与反射-Reflection.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/ES6-模块化.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="69" column="11" lean-forward="true" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/yxc/layout/post.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="899">
-          <caret line="31" column="28" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scaffolds/post.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
@@ -553,13 +436,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/yxc/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/yxc/source/css/xoxo.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
@@ -571,13 +447,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/yxc/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="745">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -616,10 +485,191 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/themes/git_them/layout/layout.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/git_them/_config.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/yxc/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/git_them/source/js/vue.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="7131" column="10" selection-start-line="7131" selection-start-column="10" selection-end-line="7131" selection-end-column="10" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/git_them/layout/_partial/script.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/git_them/layout/_partial/navbar.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="75" column="10" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="10" />
+        <state relative-caret-position="115">
+          <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/ES6-解构.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/ES6-代理-Proxy-与反射-Reflection.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/git_them/layout/_partial/calendar.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5338">
+          <caret line="10" column="58" lean-forward="true" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/git_them/layout/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/yxc/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/yxc/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/yxc/source/js/xoxo.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/git_them/source/js/moment.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="144" selection-start-line="6" selection-start-column="144" selection-end-line="6" selection-end-column="144" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/yxc/scripts/tags/center-quote.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/yxc/scripts/tags/lazy-image.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-423">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/yxc/scripts/tags/note.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-249" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/hexo/lib/plugins/helper/date.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/data.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/yxc/layout/post.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/yxc/layout/partials/archive-post.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="3" column="31" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/git_them/layout/_partial/article.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/git_them/layout/archive.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="35" column="84" lean-forward="true" selection-start-line="35" selection-start-column="84" selection-end-line="35" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/git_them/layout/_partial/head.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/git_them/source/js/main.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/git_them/layout/_partial/footer.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/ES6-模块化.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="95" column="3" lean-forward="true" selection-start-line="95" selection-start-column="3" selection-end-line="95" selection-end-column="3" />
         </state>
       </provider>
     </entry>

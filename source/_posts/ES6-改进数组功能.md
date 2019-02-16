@@ -61,7 +61,6 @@ let arr5 = [1,2,'10']
 console.log(arr5.sort())//[1,'10',2]sort默认先toString()再排序
 ```
 
-
 #### 操作方法
 
 ```
@@ -98,7 +97,6 @@ console.log(la.indexOf(2))//1
 console.log(la.lastIndexOf(2))//3
 ```
 
-
 #### 迭代方法
 - every()对数组中每一项进行运行给定函数，如果都返回true，则返回true
 - filter()对数组中每一项进行运行给定函数，如果都返回true，则返回true项组成的数组
@@ -126,7 +124,6 @@ let res = ra.reduce((pre,cur,index,arr)=>{
 console.log(ra)
 console.log(res)
 ```
-
 
 ## ES6方法
 -  ES6标准继续改进数组，添加了许多新功能，比如创建数组新方法、几个实用的方法、创建定型数组
@@ -231,13 +228,13 @@ c_arr.copyWithin(2,0)
 
 - console.log(c_arr)//[1,2,1,2,3]从索引2开始粘贴值，从索引0开始复制并持续到没有更多可复制的值
 
-
 #### 定型数组
 - 用于处理数值类型数据专用的数组
 - [定型数组](http://www.shaoqun.com/a/318331.html)
 
 #### Array.prototype.includes()
 - ES7语法
+
 ```
 let val = [1,2,3]
 console.log(val.includes(1))//true

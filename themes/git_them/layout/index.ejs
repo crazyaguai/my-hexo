@@ -1,44 +1,55 @@
 <%
 var posts = page.posts.data;
-var recentPosts = page.posts.data.slice(0, 6);
+var recentPosts = page.posts.data;
 %>
 
 <div class="container-lg">
-  <%- partial('_partial/intro') %>
+    <%- partial('_partial/intro') %>
 
-  <div class="blog-detail">
-    <%- partial('_partial/navbar-secondary', {nav_selected: 0}) %>
+    <div class="blog-detail">
+        <%- partial('_partial/navbar-secondary', {nav_selected: 0}) %>
 
-    <div class="body-secondary">
-      <p class="right-title">Recent post</p>
-      <ul class="recent-post clearfix">
-        <% recentPosts.forEach(function(post){ %>
-        <li class="recent-post-item">
-          <div class="clearfix">
-            <h5 class="post-title text-ellipsis">
-              <i class="fa fa-bars"></i>
-              <a href="<%= url_for(post.path) %>"><%= post.title || 'Untitled' %></a>
-            </h5>
-            <p class="post-description text-ellipsis desktop-only">
-              <%= post.content
-                      .replace(/<[^>]*>/ig, ' ')
-                      .substr(0, 50) %>
-            </p>
-            <p class="post-info desktop-only">
+        <div class="body-secondary">
+            <p class="right-title"></p>
+            <ul class="recent-post clearfix">
+                <% recentPosts.forEach(function(post){ %>
+                <li class="recent-post-item">
+                    <div class="clearfix">
+                        <h5 class="post-title text-ellipsis">
+                            <i class="fa fa-bars"></i>
+                            <a href="<%= url_for(post.path) %>"><%= post.title || 'Untitled' %></a>
+                        </h5>
+                        <p class="post-description text-ellipsis desktop-only">
+                            <%= post.content
+                                    .replace(/<[^>]*>/ig, ' ')
+                                    .substr(0, 50) %>
+                        </p>
+                        <p class="post-info desktop-only">
               <span>
-                <% if(post.categories.data[0]){ %>
-                  <a class="category-link" href="<%= url_for(post.categories.data[0].path) %>"><i class="fa fa-folder-open"></i> <%= post.categories.data[0].name %></a>
-                <% } else { %>
+                  <% if(post.categories.data[0]){ %>
+                  <a class="category-link" href="<%= url_for(post.categories.data[0].path) %>"><i
+                              class="fa fa-folder-open"></i> <%= post.categories.data[0].name %></a>
+                  <% } else { %>
                   <i class="fa fa-folder-open"></i> <%= 'Uncategorized' %>
-                <% } %>
+                  <% } %>
               </span>
-              <span><i class="fa fa-tag"></i> <%= post.tags.length %> </span>
-            </p>
-          </div>
-        </li>
-        <% }) %>
-      </ul>
-      <%- partial('_partial/calendar') %>
+                            <span><i class="fa fa-tag"></i> <%= post.tags.length %> </span>
+                        </p>
+                    </div>
+                </li>
+                <% }) %>
+            </ul>
+            <!--<%- partial('_partial/calendar') %>-->
+        </div>
     </div>
-  </div>
 </div>
+
+<% if (page.total > 1){ %>
+<nav class="page-nav text-center">
+    <%- paginator({
+        prev_text: '〈',
+        mid_size: 1,
+        next_text: '〉'
+    }) %>
+</nav>
+<% } %>
