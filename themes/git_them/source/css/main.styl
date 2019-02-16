@@ -279,17 +279,17 @@
             font-size: 12px
 
 .tag-list
-    display flex
-    flex-wrap wrap
-    list-style none
-    margin-left -15px
+    padding: 4px 0
+    list-style: none
+    margin: 0
     &-item
+        float: left
+        margin: 0 0.5em 0.5em 0
+        padding: 0.3em 0.9em
         background: #f1f8ff
         border-radius: 3px
         color: #0366d6
-        font-size: 14px
-        padding 10px
-        margin 5px
+        font-size: 12px
         &:hover
             background: #ddeeff
 
@@ -441,9 +441,22 @@
 }
 
 //tags
-.tag-list-item{
+.tag-page
+    .tag-list
+        display flex
+        flex-wrap wrap
+        list-style none
+        margin-left -15px
+        &-item
+            background: #f1f8ff
+            border-radius: 3px
+            color: #0366d6
+            font-size: 14px
+            padding 10px
+            margin 5px
+            &:hover
+                background: #ddeeff
 
-}
 
 //目录
 .toc-article{
