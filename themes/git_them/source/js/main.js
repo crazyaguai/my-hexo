@@ -8,13 +8,15 @@ document.addEventListener('DOMContentLoaded',function () {
         console.log('初始搜索')
         let searchCon = document.querySelector('.search-list-con')
         searchInput.addEventListener('focus',function () {
+            searchCon.style.opacity = 1
             searchCon.style.display = 'block'
         })
         searchInput.addEventListener('blur',function () {
+            searchCon.style.opacity = 0
             setTimeout(function () {
                 searchCon.style.display = 'none'
                 searchInput.value = ''
-            },500)
+            },300)
         })
         searchInput.addEventListener('input',function () {
             var text = searchInput.value.toLocaleLowerCase()

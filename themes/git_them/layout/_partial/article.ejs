@@ -13,7 +13,8 @@ var publishTimestamp = page.date.valueOf();
                 </time>
         </span>
     </h3>
-
+    <!--目录-->
+    <%- partial('_partial/toc') %>
     <article class="post-content">
         <h1><%= page.title || 'Untitle' %></h1>
         <%- page.content %>

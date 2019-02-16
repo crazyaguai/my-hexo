@@ -1,0 +1,8 @@
+<% if(toc(page.content).length !== 0) { %>
+<div class="toc-container">
+    <div id="toc" class="toc-article">
+        <span class="toc-title">目录</span>
+        <%- toc(page.content, {list_number: false}) %>
+    </div>
+</div>
+<% } %>

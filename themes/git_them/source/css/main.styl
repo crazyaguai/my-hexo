@@ -1,3 +1,4 @@
+//@import "./_reset.styl"
 @import "./_variables"
 @import "./base"
 @import "./navbar"
@@ -278,17 +279,17 @@
             font-size: 12px
 
 .tag-list
-    padding: 4px 0
-    list-style: none
-    margin: 0 20px 0 0
+    display flex
+    flex-wrap wrap
+    list-style none
+    margin-left -15px
     &-item
-        float: left
-        margin: 0 0.5em 0.5em 0
-        padding: 0.3em 0.9em
         background: #f1f8ff
         border-radius: 3px
         color: #0366d6
-        font-size: 12px
+        font-size: 14px
+        padding 10px
+        margin 5px
         &:hover
             background: #ddeeff
 
@@ -398,10 +399,10 @@
 .search-input:focus{
     background: #fff;
     color: #000;
-    width: 300px;
+    width: 250px;
 }
 
-搜索列表
+//搜索列表
 .search-list-con{
     display none
     width 100%
@@ -433,4 +434,79 @@
     }
 }
 
+//Categories列表
+.category-list-item {
+    font-size 16px
+    line-height 30px
+}
 
+//tags
+.tag-list-item{
+
+}
+
+//目录
+.toc-article{
+    display: block;
+    position: fixed;
+    margin-left: -15px;
+    max-height: calc(100vh - 150px);
+    width: 200px;
+    top: 25%;
+    font-size: 12px;
+    overflow-y: auto;
+    overflow-x: auto;
+    border-radius: 4px;
+    background-color: #F6F6F6;
+    //right: 20px;
+    right: calc(100%/2 - 690px);
+    .toc-title{
+        font-size: 14px;
+        color: #017E66;
+        font-weight: 500;
+        background: #BFE6D7;
+        display: block;
+        text-align center
+    }
+    .toc{
+        margin: 0;
+        padding: 10px;
+        list-style none
+        .toc-item{
+            margin: 5px 0px;
+            padding: 0;
+            color: #444;
+        }
+        .toc-level-4{
+            margin-left: -20px;
+            list-style: none;
+        }
+        .toc-link{
+            display: block;
+            width: 100%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            text-decoration: none;
+            color: #999;
+            line-height: 22px;
+            font-size; 14px;
+            &:hover{
+                color: #afafaf;
+            }
+        }
+    }
+}
+@media (max-width: $screen-sm){
+    .toc-article{
+        position: unset;
+        width: 100%;
+        margin-left: 0px;
+        .toc-item{
+            width: 100%;
+        }
+        .toc-link{
+            width: 100%;
+        }
+    }
+}

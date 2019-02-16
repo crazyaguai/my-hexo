@@ -6,9 +6,9 @@
     "version": "3.7.1"
   },
   "scripts": {
-      "start": "npm run dev",
-      "dev": "hexo server",
-      "publish": "hexo c && hexo g && hexo d"
+    "start": "npm run dev",
+    "dev": "hexo server",
+    "publish": "hexo c && hexo g && hexo d"
   },
   "dependencies": {
     "hexo": "^3.2.0",
