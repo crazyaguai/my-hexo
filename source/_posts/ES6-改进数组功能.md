@@ -5,7 +5,8 @@ tags: [ES6,js,Array]
 categories: ES6
 ---
 
-## 常用数组方法
+### 常用数组方法
+
 #### 检测数组
 
 ```
@@ -80,7 +81,8 @@ console.log(aa3)//[2,3,4,5]
 ```
 
 #### 删除、插入、替换
-删除splice(1,2)\插入splice(2,0,'a','b')\替换splice(1,2,3,4)
+
+- 删除splice(1,2)\插入splice(2,0,'a','b')\替换splice(1,2,3,4)
 
 ```
 let sa1 = [1,2,3,4,5]
@@ -98,6 +100,7 @@ console.log(la.lastIndexOf(2))//3
 ```
 
 #### 迭代方法
+
 - every()对数组中每一项进行运行给定函数，如果都返回true，则返回true
 - filter()对数组中每一项进行运行给定函数，如果都返回true，则返回true项组成的数组
 - forEach()对数组中每一项执行给定函数，没有返回值
@@ -125,9 +128,12 @@ console.log(ra)
 console.log(res)
 ```
 
-## ES6方法
--  ES6标准继续改进数组，添加了许多新功能，比如创建数组新方法、几个实用的方法、创建定型数组
+### ES6方法
+
+- ES6标准继续改进数组，添加了许多新功能，比如创建数组新方法、几个实用的方法、创建定型数组
+
 #### Array.of()
+
 - Array构造函数传入参数问题
 
 ```
@@ -151,6 +157,7 @@ console.log(arr1)//[1,2,3]
 - 注意：Array.of()不使用Sympol.species属性返回确定的类型，而是使用of()方法中this()的值来返回数据类型
 
 #### Array.from()
+
 - js不支持直接将非数组对象转换为真实数组，如arguments，如果把它当做数组使用必须先转换该对象的类型
 - es5中的转换方法
 
@@ -197,6 +204,7 @@ console.log(i_arr)//[1,2,3]
 ```
 
 #### find()\findIndex()
+
 - find()返回找到的值、findIndex()返回找到值的位置，接收两个参数，一个是回调函数、一个是可选参数
 
 ```
@@ -208,6 +216,7 @@ console.log(n.findIndex(item=>item>2))//2
 - 如果在数组中查找根据某个条件匹配的元素，使用find()，如果只是匹配某个元素值使用indexOf()
 
 #### fill()
+
 - fill()可以用指定的值填充一致多个数组元素
 
 ```
@@ -219,6 +228,7 @@ console.log(f_arr)//[1,0,0,1]左闭右开
 ```
 
 #### copyWithin()
+
 - copyWithin()从数组中复制元素的值
 
 ```
@@ -229,10 +239,12 @@ c_arr.copyWithin(2,0)
 - console.log(c_arr)//[1,2,1,2,3]从索引2开始粘贴值，从索引0开始复制并持续到没有更多可复制的值
 
 #### 定型数组
+
 - 用于处理数值类型数据专用的数组
 - [定型数组](http://www.shaoqun.com/a/318331.html)
 
 #### Array.prototype.includes()
+
 - ES7语法
 
 ```

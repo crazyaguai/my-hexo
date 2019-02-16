@@ -4,9 +4,13 @@ date: 2019-01-15 15:53:43
 tags: [webpack]
 categories: webpack
 ---
+
 ### CommonsChunkPlugin
+
 - 配置文档：https://www.webpackjs.com/plugins/commons-chunk-plugin/
+
 - 例子
+
 ```
 //打包node_modules的公共代码
 new webpack.optimize.CommonsChunkPlugin({
@@ -40,8 +44,11 @@ new webpack.optimize.CommonsChunkPlugin({
     minChunks: Infinity
 }),
 ```
+
 ### optimization.splitChunks
+
 - 配置文档：https://webpack.js.org/plugins/split-chunks-plugin/
+
 ```
 optimization: {
     minimize: false,

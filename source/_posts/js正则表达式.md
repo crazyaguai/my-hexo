@@ -6,6 +6,7 @@ categories: js
 ---
 
 ### 修饰符
+
 - g全局匹配
 - i不区分大小写，默认大小写敏感
 - m匹配多行
@@ -20,7 +21,6 @@ console.log(str)
 // b`
 ```
 
-
 ### 元字符
 - \t 水平制表符tab
 - \v 垂直制表符
@@ -31,19 +31,21 @@ console.log(str)
 - \cX ctrl+X
 
 ### 字符类
+
 - 使用[]创建一个字符类
 
 ```
 console.log('1b2'.replace(/[abc]/g,'3'))//132
 ```
+
 - 使用^符号字符类取反
 
 ```
 console.log('1b2'.replace(/[^abc]/g,'3'))//3b3
 ```
 
-
 ### 范围类
+
 - [a-zA-Z0-9]
 - 范围类中想包含-符号[a-z-]
 
@@ -51,8 +53,8 @@ console.log('1b2'.replace(/[^abc]/g,'3'))//3b3
 console.log('a-'.replace(/[a-z-]/g,'1'))//11
 ```
 
-
 ### 预定义的范围类
+
 - . 除了回车和换行符之外的所有字符--[^\n\r]
 - \d 数字字符--[0-9]
 - \D 非数字字符--[^0-9]
@@ -62,25 +64,33 @@ console.log('a-'.replace(/[a-z-]/g,'1'))//11
 - \W 非单词字符--[^a-zA-Z_0-9]
 
 ### 边界
+
 - ^ 以XXX开始
+
 ```
 console.log('abc'.replace(/^[abc]/,'A'))//Abc
 ```
+
 - $ 以XXX结束
+
 ```
 console.log('abc'.replace(/[abc]$/,'A'))//abA
 ```
+
 - \b 单词边界
+
 ```
 console.log('Are you youOK'.replace(/you\b/,'YOU'))//Are YOU youOK
 ```
+
 - \B 非单词边界
+
 ```
 console.log('Are you youOK'.replace(/you\B/,'YOU'))//Are you YOUOK
 ```
 
-
 ### 量词
+
 - ? 出现0次或者一次（最多一次）
 - \+ 出现一次或者多次（最少出现一次）
 - \* 0次或者多次（任意次）
@@ -92,9 +102,8 @@ console.log('Are you youOK'.replace(/you\B/,'YOU'))//Are you YOUOK
 console.log('aabbcc'.replace(/[abc]{2}/g,'A'))//AAA
 ```
 
-
-
 ### 贪婪模式与非贪婪模式
+
 - 贪婪模式，js正则默认贪婪模式
 
 ```
@@ -108,44 +117,40 @@ console.log('aaa'.replace(/a+/g,'A'))//A
 console.log('aaa'.replace(/a+?/g,'A'))//AAA
 ```
 
-
 ### 分组
+
 - 使用()可以实现分组
 
 ```
 console.log('ababc'.replace(/(ab){2}/g,'A'))//Ac
 ```
 
-
 ### 忽略分组
+
 - 在分组内加上 ?:
 
 ```
 console.log('2012-11-01'.replace(/(?:\d{4})-(\d{2})-(\d{2})/,'$3/$2/$1'))//$3/11/2012
 ```
 
-
-
 ### 或
+
 - |
 
 ```
 console.log('abcadc'.replace(/a(b|d)c/g,'A'))//AA
 ```
 
-
-
 ### 反向引用
+
 - 分组后使用$1、$2...
 
 ```
 console.log('2012-11-01'.replace(/(\d{4})-(\d{2})-(\d{2})/,'$3/$2/$1'))//01/11/2012
 ```
 
-
-
-
 ### 前瞻&后顾
+
 - 正则表达式从文本头部向尾部解析，文本尾部称为'前'，前瞻就是匹配规则时候向前（尾部方向）检查是否断言
 - js正则不支持后顾
 - exp(?=asset) 正向前瞻（符合断言）
@@ -160,9 +165,8 @@ console.log('a2aa'.replace(/\w(?=\d)/g,'X'))//X2aa
 console.log('a2aa'.replace(/\w(?!\d)/g,'X'))//aXXX
 ```
 
-
-
 ### 对象属性
+
 - global\ignoreCase\multiline\lastIndex\source
 
 ```
@@ -174,12 +178,10 @@ console.log(reg1.lastIndex)//0 当前匹配结果最后一个字符的下一个�
 console.log(reg1.source)//\w
 ```
 
-
-
----
-
 ### 正则表达式方法
+
 #### test()
+
 - RegExp.prototype.test(str) 检测字符串参数中是否存在匹配正则表达式模式的字符串
 - 存在返回true不存在返回false
 - 注意如果包含全局匹配g那么结果会受到lastIndex影响
@@ -195,6 +197,7 @@ console.log(reg2.lastIndex)//0
 ```
 
 #### exec()
+
 - RegExp.prototype.exec(str)
 - 使用正则表达式对字符串执行搜索，并将更新全局RegExp对象的属性以反映匹配结果
 - 如果没有匹配文本返回null，否则返回一个结果的数组
@@ -221,11 +224,11 @@ let r3 = reg4.exec('1aa23bb4')//第三次
 console.log(reg4.lastIndex,r3)//0 null
 ```
 
-
----
 ### 字符串对象的方法
+
 #### search()
-- String.prototype.search(reg)，返回第一个匹配结果的index，查找不到返回-1，忽略g标志，总是从开始匹配
+
+- String.prototype.search(reg)，返回第一个匹配结果的index，查找不到返回-1，忽略g标志，总是从开始匹配。
 
 ```
 console.log('abc'.search(/[abc]/g))//0
@@ -233,6 +236,7 @@ console.log('abc'.search(/[abc]/g))//0
 ```
 
 #### match()
+
 - String.prototype.match(reg) 检索字符串，以找到一个或者多个与正则匹配的文本 是否有标志g对结果影响很大
 - 非全局调用，返回数组第一个元素存放匹配的文本，其余元素是与正则的子表达式匹配的文本，还有两个对象属性index、input
 
@@ -255,6 +259,7 @@ console.log(re3.index + '\t' + reg6.lastIndex + '\t' + re3.toString())//undefine
 ```
 
 #### split()
+
 - String.prototype.split(reg)
 
 ```
@@ -262,6 +267,7 @@ console.log('1a2b3c4d'.split(/\d/g))//['',a,b,c,d]
 ```
 
 #### replace()
+
 - String.prototype.replace(reg)
 
 ```

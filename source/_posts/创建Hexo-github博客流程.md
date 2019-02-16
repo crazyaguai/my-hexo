@@ -4,68 +4,84 @@ date: 2018-08-20 09:45:53
 tags: [hexo]
 categories: hexo
 ---
+### 简介
 
-HEXO快速、简单且功能强大的 Node.js 博客框架。
+- HEXO快速、简单且功能强大的 Node.js 博客框架。
 https://hexo.io/zh-cn/
-## 安装
-1.全局安装git以及nodeJs
-2.全局安装hexo
+
+### 安装
+
+1. 全局安装git以及nodeJs
+2. 全局安装hexo
+
 ```
 npm install -g hexo
 ```
-3.新建项目文件夹
+
+3. 新建项目文件夹
+
 ```
 mkdir hexo-project
 ```
-4.进入项目文件夹，初始化hexo
+
+4. 进入项目文件夹，初始化hexo
+
 ```
 cd hexo-project
 hexo init
+
 ```
-5.安装依赖
+
+5. 安装依赖
+
 ```
 npm install
 ```
-6.启动服务
+
+6. 启动服务
+
 ```
 hexo server || hexo s
 ```
-访问 http://127.0.0.1:4000/
 
-7.此时可以在本地访问服务，下面进行提交代码到git的步骤，首先在 github (https://github.com/) 上创建项目，注意项目名字有格式要求必须为：[github用户名].github.io，否则不能使用，参考：https://github.com/crazyaguai/crazyaguai.github.io 名称。
+- 访问 http://127.0.0.1:4000/
 
-8.安装hexo-deployer-git提交代码到git用，在项目中执行
+7. 此时可以在本地访问服务，下面进行提交代码到git的步骤，首先在 github (https://github.com/) 上创建项目，注意项目名字有格式要求必须为：[github用户名].github.io，否则不能使用，参考：https://github.com/crazyaguai/crazyaguai.github.io 名称。
+8. 安装hexo-deployer-git提交代码到git用，在项目中执行
+
 ```
 npm install hexo-deployer-git --save
 ```
-9.配置根路径_config.yml文件
+
+9. 配置根路径_config.yml文件
+
 ```
 deploy:
   type: git
   repo: https://github.com/crazyaguai/crazyaguai.github.io(你的项目地址)
   branch: master
 ```
-10.配置完成就可以将Hexo博客提交代码到github上了，执行
+
+10. 配置完成就可以将Hexo博客提交代码到github上了，执行
+
 ```
 hexo clean && hexo generate && hexo deploy || hexo c && hexo g && hexo d
 ```
-11.打开你的github hexo项目地址查看，例如 https://crazyaguai.github.io/
 
+11. 打开你的github hexo项目地址查看，例如 https://crazyaguai.github.io/
 
+### 目录结构
 
-
-## 目录结构
 - _config.yml：全局配置文件
 - package.json：依赖
 - scaffolds：文章脚手架，根据文件夹下的配置构建文章
 - source：新建文章保存在这个文件夹下，在此修改文章
 - themes：主题目录
 
+### _config.yml文件配置
 
+#### 根路径_config.yml配置
 
-
-## _config.yml文件配置
-### 根路径_config.yml配置
 ```
 # Hexo Configuration
 ## Docs: http://hexo.io/docs/configuration.html
@@ -143,7 +159,8 @@ deploy:
   branch: master
 ```
 
-### 主题_config.yml配置
+#### 主题_config.yml配置
+
 ```
 menu: #右上角导航菜单，冒号前面是菜单名，后面是访问路径。
   Home: /
@@ -172,31 +189,32 @@ google_analytics: #google_analytics统计ID
 rss:  #生成RSS路径
 ```
 
-## 常用命令
+### 常用命令
+
 - hexo new "postName" #新建文章
 - hexo new page "pageName" #新建页面
 - hexo clean #清除缓存
 - hexo generate #生成静态页面至public目录
 - hexo server #开启预览访问端口（默认端口4000，'ctrl + c'关闭server）
 - hexo deploy #将.deploy目录部署到GitHub
-### 命令简写
+
+#### 命令简写
+
 - hexo n "我的博客" == hexo new "我的博客" #新建文章
 - hexo p == hexo publish
 - hexo g == hexo generate#生成
 - hexo s == hexo server #启动服务预览
 - hexo d == hexo deploy#部署
 
+### Hexo主题相关
 
-## Hexo主题相关
-参考：http://www.ahonn.me/2016/12/15/create-a-hexo-theme-from-scratch/
+- 参考：http://www.ahonn.me/2016/12/15/create-a-hexo-theme-from-scratch/
 
+### 添加搜索
 
-## 添加搜索
-参考：https://www.jianshu.com/p/2010ad07d960
-
-
-## 分类和标签设置
-参考：http://ijiaober.github.io/2014/08/05/hexo/hexo-04/、
-https://www.jianshu.com/p/3d2e7b3ec182
+- 参考：https://www.jianshu.com/p/2010ad07d960
 
 
+### 分类和标签设置
+
+- 参考：http://ijiaober.github.io/2014/08/05/hexo/hexo-04/、https://www.jianshu.com/p/3d2e7b3ec182

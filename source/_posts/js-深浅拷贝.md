@@ -5,9 +5,12 @@ tags: [js,深拷贝]
 categories: js
 ---
 
-##### 概念
+### 概念
+
 - https://mp.weixin.qq.com/s/scz9gRJeh7PM6GJ7wvnTsA
-##### 方法1：不考虑循环情况
+
+### 方法1：不考虑循环情况
+
 ```
 function clone(value) {
     if (Array.isArray(value)) {
@@ -23,7 +26,9 @@ function clone(value) {
     }
 }
 ```
-##### 方法2：考虑循环嵌套情况
+
+### 方法2：考虑循环嵌套情况
+
 ```
 function deepCopy(obj, cache = []) {
     // just return if obj is immutable value
