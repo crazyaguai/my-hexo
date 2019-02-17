@@ -119,7 +119,17 @@ Object.setPrototypeOf(friend,dog)
 console.log(friend.Fun())//wangwangwang world
 ```
 
-#### [[HomeObject]]属性
+#### 正式的方法定义
+
+```
+let obj = {
+    //是方法
+    a(){
+    }
+}
+//不是方法，是函数
+function a(){}
+```
 
 - 正式的方法定义内部存在[[HomeObject]]属性
 

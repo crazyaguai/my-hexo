@@ -39,7 +39,9 @@ step-end: 位于开始处经过时间间隔后结束。相当于steps(1,end)
 
 #### 复合属性
 
-- transition: <transition-property> || <transition-duration> || <transition-timing-function> || <transition-delay>
+```
+transition: <transition-property> || <transition-duration> || <transition-timing-function> || <transition-delay>
+```
 
 #### 多值、无效值、重复值情况
 

@@ -22,8 +22,9 @@ var posts = site.posts
             </div>
 
             <ul class="navbar-nav float-left">
+                <li><a href="/">Overview</a></li>
                 <% if(theme.menu.archives){ %>
-                <li><a href="<%= url_for(theme.archive_dir) %>">Archives</a></li>
+                <li><a href="<%= url_for(theme.archive_dir) %>">Posts</a></li>
                 <% } %>
                 <% if(theme.menu.categories){ %>
                 <li><a href="<%= url_for(theme.category_dir) %>">Categories</a></li>
