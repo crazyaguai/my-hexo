@@ -196,6 +196,14 @@
         margin-bottom: 16px
         height: 118px
         float: left
+        .post-title
+            a
+                width calc(100% - 40px)
+                overflow hidden
+                white-space nowrap
+                text-overflow ellipsis
+                display inline-block
+                vertical-align top
         @media (max-width: $screen-sm)
             width: 100%
             float: none
@@ -218,12 +226,17 @@
                 position: relative
                 i
                     position: absolute
-                    top: 20px
+                    top: 18px
                     left: 14px
                 a
                     display: block
+                    width 100%
+                    vertical-align unset
                     padding: 14px
                     padding-left: 32px
+                    overflow hidden
+                    white-space nowrap
+                    text-overflow ellipsis
 
         &:nth-child(odd)
             margin-right: 5px
@@ -270,6 +283,11 @@
             margin: 0
             font-size: 20px
             font-weight: 600
+            a
+                display block
+                overflow hidden
+                white-space nowrap
+                text-overflow ellipsis
         p
             font-size: 14px
             color: #586069
@@ -472,6 +490,8 @@
     background-color: #F6F6F6;
     //right: 20px;
     right: calc(100%/2 - 690px);
+    border: 1px solid #dcddde;
+    padding-bottom: 5px;
     .toc-title{
         font-size: 14px;
         color: #017E66;
