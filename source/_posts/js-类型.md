@@ -264,7 +264,7 @@ console.log(b)//{"a":{"b":1}}
 - 使用Object.create(null)创建的对象[[Prototypr]]为null，没有valueOf(),toString()方法，因此无法进行强制类型转换。
 
 ```
-Number(new Boolean(''))//1,valueOf()->true,true->1
+Number(new Boolean(''))//0,valueOf()->false,false->0
 Number(new Array('22'))//22,toString()->'22','22'->22
 ```
 
@@ -498,3 +498,4 @@ console.log(a > b)//false
 console.log(a <= b)//true
 console.log(a >= b)//true
 ```
+
