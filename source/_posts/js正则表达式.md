@@ -1,9 +1,15 @@
 ---
 title: js正则表达式
-date: 2018-11-21 22:24:41
+date: 2019-03-20 22:24:41
 tags: [js,正则表达式]
 categories: js
 ---
+
+### 模糊匹配
+
+- 横向模糊匹配：长度不固定，比如{m,n}最少出现m次最多出现n次
+- 纵向模糊匹配：某一位置字符多种可能，比如[\w]
+
 
 ### 修饰符
 
@@ -30,7 +36,7 @@ console.log(str)
 - \f 换页符
 - \cX ctrl+X
 
-### 字符类
+### 字符类（字符组）
 
 - 使用[]创建一个字符类
 
@@ -38,7 +44,7 @@ console.log(str)
 console.log('1b2'.replace(/[abc]/g,'3'))//132
 ```
 
-- 使用^符号字符类取反
+- 使用^符号（脱字符）字符类取反，即排除字符组
 
 ```
 console.log('1b2'.replace(/[^abc]/g,'3'))//3b3
@@ -56,14 +62,22 @@ console.log('a-'.replace(/[a-z-]/g,'1'))//11
 ### 预定义的范围类
 
 - . 除了回车和换行符之外的所有字符--[^\n\r]
-- \d 数字字符--[0-9]
+- \d 数字字符--[0-9]，digit（数字）
 - \D 非数字字符--[^0-9]
-- \s 空白符--[\t\n\x0B\f\r]
+- \s 空白符--[\t\n\x0B\f\r]，space（空格）
 - \S 非空白符--[^\t\n\x0B\f\r]
-- \w 单词字符，字母、数字、下划线--[a-zA-Z_0-9]
+- \w 单词字符，字母、数字、下划线--[a-zA-Z_0-9]，word（单词）
 - \W 非单词字符--[^a-zA-Z_0-9]
+- . 通配符[^\n\t\u2028\u2029]，表示换行符、回车符、行分隔符、段分隔符之外的任意字符
 
-### 边界
+- 如果想**匹配任意字符**可以使用：[\d\D],[\w\W],[\s\S],[^]中任意一个
+
+### 位置匹配
+
+- 位置（锚）是指相邻字符串之间的位置
+- ES5中有6个锚：^,$,\b,\B,(?=p),(?!p)
+
+#### 边界
 
 - ^ 以XXX开始
 
@@ -89,6 +103,24 @@ console.log('Are you youOK'.replace(/you\b/,'YOU'))//Are YOU youOK
 console.log('Are you youOK'.replace(/you\B/,'YOU'))//Are you YOUOK
 ```
 
+#### 前瞻&后顾
+
+- (?=p) 表示p前面的位置，该位置后边的字符匹配p，可以理解为存在一个位置，该位置后边的字符与p匹配，正向先行断言
+- (?!p) 是(?=p)反面的意思，负向先行断言
+- 正则表达式从文本头部向尾部解析，文本尾部称为'前'，前瞻就是匹配规则时候向前（尾部方向）检查是否断言
+- js正则不支持后顾
+- exp(?=asset) 正向前瞻（符合断言）
+
+```
+console.log('a2aa'.replace(/\w(?=\d)/g,'X'))//X2aa
+```
+
+- exp(?!asset) 负向前瞻（不符合断言）
+
+```
+console.log('a2aa'.replace(/\w(?!\d)/g,'X'))//aXXX
+```
+
 ### 量词
 
 - ? 出现0次或者一次（最多一次）
@@ -112,6 +144,7 @@ console.log('aaa'.replace(/a+/g,'A'))//A
 
 - 非贪婪模式，尽可能少的匹配，一旦匹配成功就不再进行尝试
 - 非贪婪模式需要在量词后边加 ?
+- {m.n}?,{m,}?,+?,*?,??
 
 ```
 console.log('aaa'.replace(/a+?/g,'A'))//AAA
@@ -125,23 +158,17 @@ console.log('aaa'.replace(/a+?/g,'A'))//AAA
 console.log('ababc'.replace(/(ab){2}/g,'A'))//Ac
 ```
 
-### 忽略分组
-
-- 在分组内加上 ?:
-
-```
-console.log('2012-11-01'.replace(/(?:\d{4})-(\d{2})-(\d{2})/,'$3/$2/$1'))//$3/11/2012
-```
-
-### 或
+#### 或（多选分支）
 
 - |
+
+- 分支结构是惰性的，前边的匹配之后，后边的就不在尝试了
 
 ```
 console.log('abcadc'.replace(/a(b|d)c/g,'A'))//AA
 ```
 
-### 反向引用
+#### 反向引用
 
 - 分组后使用$1、$2...
 
@@ -149,21 +176,64 @@ console.log('abcadc'.replace(/a(b|d)c/g,'A'))//AA
 console.log('2012-11-01'.replace(/(\d{4})-(\d{2})-(\d{2})/,'$3/$2/$1'))//01/11/2012
 ```
 
-### 前瞻&后顾
-
-- 正则表达式从文本头部向尾部解析，文本尾部称为'前'，前瞻就是匹配规则时候向前（尾部方向）检查是否断言
-- js正则不支持后顾
-- exp(?=asset) 正向前瞻（符合断言）
+- 正则表达式中使用\1,\2,\3引用分组
+- \10表示第十个分组，如果想匹配\1和0使用(?:\1)0,\1(?:0)
+- 引用不存在的分组不会报错，会匹配反向引用字符串本身
 
 ```
-console.log('a2aa'.replace(/\w(?=\d)/g,'X'))//X2aa
+console.log('aa'.replace(/([a])\1/,'b'))//b
 ```
 
-- exp(?!asset) 负向前瞻（不符合断言）
+#### 分组括号嵌套
 
 ```
-console.log('a2aa'.replace(/\w(?!\d)/g,'X'))//aXXX
+var regex = /^((\d)(\d(\d)))\1\2\3\4$/;
+var string = "1231231233";
+console.log( regex.test(string) ); // true
+console.log( RegExp.$1 ); // 123,第一个括号对应的
+console.log( RegExp.$2 ); // 1，第二个括号对应的
+console.log( RegExp.$3 ); // 23，。。。
+console.log( RegExp.$4 ); // 3，。。。
 ```
+
+#### 忽略分组（非捕获括号）
+
+- 在分组内加上 ?: 即(?:)
+
+```
+console.log('2012-11-01'.replace(/(?:\d{4})-(\d{2})-(\d{2})/,'$3/$2/$1'))//$3/11/2012
+```
+
+#### 分组后边有量词
+
+- 分组后边有量词，分组最终捕获最后一次的匹配
+
+```
+let r = /(\d){1,4}/
+console.log('123456'.match(r))// ["1234", "4", index: 0, input: "123456", groups: undefined]
+```
+
+### 正则表达式回溯法
+
+- 尝试匹配失败时，会退回之前的一步，本质是深度优先算法
+
+#### 产生回溯
+
+- 贪婪量词，{2,4}因为是贪婪的，所以先会尝试尽可能多的匹配
+- 惰性量词，匹配少了，不够会回溯，'12345'.match(/^(\d{1,3}?)(\d{1,3})$/)，第一个分组会先尝试匹配一个，但是第二个就不能匹配，于是尝试两个、三个。。。
+- 分支结构，'123'.match(/^(12|123)$/)
+
+### 拆分正则
+
+#### 优先级
+
+- 转义符\  >  括号和方括号  >  量词  >  位置和序列（位置、一般字符）  >  管道符
+
+#### 注意要点
+
+- 匹配字符串整体/^(a|b)$/而不是/^a|b&/
+- 量词连续：/[abc]{3}+/会报错，应该写成/([abc]{3})+/
+- 元字符转义问题：^,$,.,*,+,?,|,\,/,(,),[,],{,},=,!,:,-
 
 ### 对象属性
 
@@ -203,6 +273,7 @@ console.log(reg2.lastIndex)//0
 - 如果没有匹配文本返回null，否则返回一个结果的数组
 - 返回的数组有两个属性index声明第一个匹配字符的位置、input存放被检索的字符串string
 - 非全局调用返回的数组：第一项是与正则表达式匹配的文本、第二项（以及以后项）是与分组匹配的文本
+- 非全局匹配lastindex为0，全局匹配每次调用lastIndex会增加
 
 ```
 let reg3 = /\d(\w)(\w)\d/
@@ -229,8 +300,10 @@ console.log(reg4.lastIndex,r3)//0 null
 #### search()
 
 - String.prototype.search(reg)，返回第一个匹配结果的index，查找不到返回-1，忽略g标志，总是从开始匹配。
+- search会把字符串转换为正则匹配
 
 ```
+console.log('aaa'.search('.'))//0，转换为正则匹配
 console.log('abc'.search(/[abc]/g))//0
 console.log('abc'.search(/[abc]/g))//0
 ```
@@ -238,6 +311,7 @@ console.log('abc'.search(/[abc]/g))//0
 #### match()
 
 - String.prototype.match(reg) 检索字符串，以找到一个或者多个与正则匹配的文本 是否有标志g对结果影响很大
+- match会把字符串转换为正则匹配
 - 非全局调用，返回数组第一个元素存放匹配的文本，其余元素是与正则的子表达式匹配的文本，还有两个对象属性index、input
 
 ```
@@ -261,9 +335,16 @@ console.log(re3.index + '\t' + reg6.lastIndex + '\t' + re3.toString())//undefine
 #### split()
 
 - String.prototype.split(reg)
+- 存在第二个参数，表示结果数组最大长度
 
 ```
 console.log('1a2b3c4d'.split(/\d/g))//['',a,b,c,d]
+```
+
+- 正则使用分组时，结果包含分隔符
+
+```
+console.log('abc'.split(/(\w)/g))// ["", "a", "", "b", "", "c", ""]
 ```
 
 #### replace()
@@ -285,4 +366,8 @@ console.log('a1b2c3d4'.replace(/(\d)/g,function (match,group,index,str) {
     console.log(group)
     return parseInt(match) + 1
 }))//a2b3c4d5
+//有分组情况
+'abc'.replace(/(\w)(\w)/g,function (match,$1,$2,index,str) {
+    return match
+})
 ```
