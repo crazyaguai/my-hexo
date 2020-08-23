@@ -57,5 +57,5 @@ new Promise(function (resolve) {
 console.log('script end')
 ```
 
-- 执行script标签内容（script start）-> setTimeout 进入 Macro-Task 对列 -> 执行 async1（async1 start）-> 执行 async2 (async2) ->由于 await async2 进入等待 -> 执行 Promise （promise1）-> promise.then() 进入 Micro-Task 对列 -> script 执行结束（script end）->清空 Micro-Task 对列（promise2）-> await 执行（async1 end）->执行新的 Macro-Task 任务（setTimeout）
+- 执行script标签内容（script start）-> setTimeout 进入 Macro-Task 对列 -> 执行 async1（async1 start）-> 执行 async2 (async2) ->由于 await async2 进入等待 -> 执行 Promise （promise1）-> promise.then() 进入 Micro-Task 对列 -> script 执行结束（script end）->清空 Micro-Task 对列-> await 执行（async1 end）->（promise2）->执行新的 Macro-Task 任务（setTimeout）
 - 注意：node环境以及babel转换或者部分浏览器执行顺序有所不同
