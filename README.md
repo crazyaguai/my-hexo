@@ -9,3 +9,7 @@
     "publish": "hexo c && hexo g && hexo d"// 发布
 }
 ```
+
+### 使用
+
+- markdown文件路径：source\_posts
