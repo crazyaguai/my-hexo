@@ -4,7 +4,7 @@
 
 # Site
 title: 杨晓川的博客
-subtitle: ''
+subtitle: ""
 description:
 keywords:
 author: 杨晓川
@@ -49,7 +49,7 @@ highlight:
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 16
   order_by: -date
 
@@ -82,10 +82,10 @@ deploy:
   repo: https://github.com/crazyaguai/crazyaguai.github.io
   branch: master
 
-
 # Custom Config
 menu:
   home: /
+  categories: /categories
   archives: /archives
   tags: /tags
   search: /search
@@ -104,9 +104,8 @@ feed:
   hub:
   content_limit: 140
 
-
 sitemap:
-    path: sitemap.xml
+  path: sitemap.xml
 
 disqus_shortname: XXX
 
@@ -119,5 +118,4 @@ main_site: https://crazyaguai.github.io/index.html
 github: https://github.com/crazyaguai
 
 swift_search:
-    enable: true
-
+  enable: true
