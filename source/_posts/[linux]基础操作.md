@@ -1,6 +1,6 @@
 ---
-title: linux基础操作
-date: 2020-08-24 08:02:00
+title: <linux>基础操作
+date: 2020-08-24 00:00:00
 tags: [linux]
 categories: linux
 ---

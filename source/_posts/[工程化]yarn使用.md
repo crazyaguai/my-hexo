@@ -1,7 +1,7 @@
 ---
-title: yarn使用
+title: <工程化>yarn使用
 date: 2020-07-20 00:00:00
-tags: [yarn]
+tags: [yarn,工程化]
 categories: yarn
 ---
 

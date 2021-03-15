@@ -1,6 +1,6 @@
 ---
-title: js-类型
-date: 2019-03-03 10:10:22
+title: <js>类型
+date: 2019-03-03 00:00:00
 tags: [js,js类型]
 categories: js
 ---

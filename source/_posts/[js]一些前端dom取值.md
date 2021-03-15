@@ -1,6 +1,6 @@
 ---
-title: 一些前端dom取值
-date: 2019-04-15 20:41:53
+title: <js>一些前端dom取值
+date: 2019-04-15 00:00:00
 tags: [js,DOM,css]
 categories: DOM取值
 ---

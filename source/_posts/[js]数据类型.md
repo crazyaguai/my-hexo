@@ -1,5 +1,5 @@
 ---
-title: js-数据类型
+title: <js>数据类型
 date: 2021-03-03 00:00:00
 tags: [js,js类型]
 categories: js
@@ -263,7 +263,7 @@ obj.toString = ()=>{
 
 ### 其他参考
 
-- https://crazyaguai.github.io/2019/03/03/js-%E7%B1%BB%E5%9E%8B/
+- https://crazyaguai.github.io/2019/03/03/[js]%E7%B1%BB%E5%9E%8B/
 
 
 

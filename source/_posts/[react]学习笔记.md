@@ -1,6 +1,6 @@
 ---
-title: react笔记
-date: 2019-03-27 20:02:45
+title: <react>学习笔记
+date: 2019-03-27 00:00:00
 tags: [js,react]
 categories: react
 ---

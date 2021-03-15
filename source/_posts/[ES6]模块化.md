@@ -1,6 +1,6 @@
 ---
-title: ES6-模块化
-date: 2019-02-11 08:40:50
+title: <ES6>模块化
+date: 2019-02-11 00:00:00
 tags: [ES6,js]
 categories: ES6
 ---

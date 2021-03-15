@@ -1,6 +1,6 @@
 ---
-title: 创建Hexo+github博客流程
-date: 2018-08-20 09:45:53
+title: <hexo>创建Hexo-github博客流程
+date: 2018-08-20 00:00:00
 tags: [hexo]
 categories: hexo
 ---

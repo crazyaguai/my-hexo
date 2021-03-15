@@ -1,6 +1,6 @@
 ---
-title: ES6-promise
-date: 2018-08-22 08:29:26
+title: <ES6>promise
+date: 2018-08-22 00:00:00
 tags: [ES6,js]
 categories: ES6
 ---

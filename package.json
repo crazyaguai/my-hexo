@@ -8,7 +8,9 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "hexo server",
-    "publish": "hexo c && hexo g && hexo d"
+    "publish": "hexo c && hexo g && hexo d",
+    "build": "hexo c && hexo g",
+    "deploy": "hexo d"
   },
   "dependencies": {
     "hexo": "^5.4.0",

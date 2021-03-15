@@ -1,6 +1,6 @@
 ---
-title: ES6-代理(Proxy)与反射(Reflection)
-date: 2019-02-15 08:50:44
+title: <ES6>代理-Proxy-与反射-Reflection
+date: 2019-02-15 00:00:00
 tags: [ES6,js]
 categories: ES6
 ---

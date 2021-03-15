@@ -1,6 +1,6 @@
 ---
-title: ES6-Set&Map
-date: 2018-08-22 08:29:44
+title: <ES6>Set&Map
+date: 2018-08-22 00:00:00
 tags: [ES6,js]
 categories: ES6
 ---

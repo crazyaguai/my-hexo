@@ -1,6 +1,6 @@
 ---
-title: ES6-扩展对象属性
-date: 2018-08-21 08:10:13
+title: <ES6>扩展对象属性
+date: 2018-08-21 00:00:00
 tags: [ES6,js]
 categories: ES6
 ---

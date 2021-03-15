@@ -1,6 +1,6 @@
 ---
-title: decimal处理数字问题
-date: 2019-01-31 20:39:49
+title: <js>decimal处理数字问题
+date: 2019-01-31 00:00:00
 tags: [大数,js,小数]
 categories: decimal
 ---

@@ -1,6 +1,6 @@
 ---
-title: ES6-改进数组功能
-date: 2018-11-10 10:30:30
+title: <ES6>改进数组功能
+date: 2018-11-10 00:00:00
 tags: [ES6,js,Array]
 categories: ES6
 ---

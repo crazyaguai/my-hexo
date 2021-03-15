@@ -1,6 +1,6 @@
 ---
-title: ES6-解构
-date: 2017-08-17 20:00:00
+title: <ES6>解构
+date: 2017-08-17 00:00:00
 tags: [ES6,js]
 categories: ES6
 ---

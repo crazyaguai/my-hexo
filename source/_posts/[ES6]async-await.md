@@ -1,6 +1,6 @@
 ---
-title: ES6-async&await
-date: 2018-12-10 12:16:25
+title: <ES6>async-await
+date: 2018-12-10 00:00:00
 tags: [js,async&await]
 categories: js
 ---

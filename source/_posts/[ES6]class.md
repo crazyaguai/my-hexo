@@ -1,6 +1,6 @@
 ---
-title: ES6-class
-date: 2018-08-22 08:12:23
+title: <ES6>class
+date: 2018-08-22 00:00:00
 tags: [ES6,js]
 categories: ES6
 ---

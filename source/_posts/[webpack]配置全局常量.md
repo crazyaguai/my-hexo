@@ -1,6 +1,6 @@
 ---
-title: webpack配置全局常量
-date: 2018-09-26 14:04:10
+title: <webpack>配置全局常量
+date: 2018-09-26 00:00:00
 tags: [webpack]
 categories: webpack
 ---

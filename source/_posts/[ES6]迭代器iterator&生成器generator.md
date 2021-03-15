@@ -1,6 +1,6 @@
 ---
-title: ES6-迭代器iterator&生成器generator
-date: 2018-08-22 08:29:09
+title: <ES6>迭代器iterator&生成器generator
+date: 2018-08-22 00:00:00
 tags: [ES6,js]
 categories: ES6
 ---

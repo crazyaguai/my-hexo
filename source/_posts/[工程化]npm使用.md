@@ -1,7 +1,7 @@
 ---
-title: npm使用
+title: <工程化>npm使用
 date: 2020-12-22 00:00:00
-tags: [npm]
+tags: [npm,工程化]
 categories: npm
 ---
 
@@ -19,6 +19,7 @@ categories: npm
 当前依赖项目不管其是直接依赖还是子依赖的依赖，优先将其放置在 node_modules 根目录，遇到相同模块就判断已放置在依赖树中的模块版本是否符合新模块的版本范围，如果符合则跳过；不符合则在当前模块的 node_modules 下放置该模块
 
 #### 缓存机制
+
 - 查看缓存目录 npm config get cache 缓存文件在 _cacache 文件夹下
 - _cacache文件夹目录：content-v2（二进制文件，将文件改名为.tgz后解压，可以得到npm包资源）、index-v5（描述文件，对应 content-v2 里文件的索引）、tmp
 - npm install下载依赖时，先下载到缓存中，在解压到node_modules下
@@ -145,6 +146,44 @@ cnpm install [name]
 	在 bundledDependencies 中指定的依赖包，必须先在 dependencies 和 devDependencies 声明过，否则在 npm pack 阶段会进行报错
 - optionalDependencies 可选依赖
 	即使对应依赖项安装失败了，也不会影响整个安装过程，不建议使用
+
+#### npm script
+
+- 在 package.json 中，允许通过 script 字段定义脚本
+- npm 钩子：如pre、post，对应命令npm run build的钩子命令就是：prebuild和postbuild，使用npm run build时，会默认自动先执行npm run prebuild再执行npm run build，最后执行npm run postbuild
+
+```json
+{
+  "scripts": {
+    "prebuild": "node prebuild.js",
+    "build": "node build.js",
+    "postbuild": "node postbuild.js"
+  }
+}
+```
+
+- npm 提供 process.env.npm_lifecycle_even 环境变量，在相关 npm scripts 脚本中获得当前运行的脚本名称
+- 通过 npm_package_ 获取 package.json 中的相关字段
+
+```javascript
+  // 获取 package.json 中的 name 字段值
+  console.log(process.env.npm_package_name)
+  // 获取 package.json 中的 version 字段值
+  console.log(process.env.npm_package_version)
+```
+
+- 原理
+	npm run会自动创建一个 Shell（macOS 或 Linux 中指代的是 /bin/sh， 在 Windows 中使用的是 cmd.exe）
+	只要是 shell 可以运行的命令，都可以作为 npm script 脚本
+	npm scripts 脚本可以使用 Shell 通配符等常规能力
+- npm run 创建出来的 Shell 需要将当前目录的node_modules/.bin子目录加入PATH 变量中，在 npm scripts 执行完成后，再将 PATH 变量恢复，因此可以在 npm run 中直接使用 webpack
+- 使用技巧：
+	传参：使用--标记参数webpack --profile > stats.json
+	串行脚本：npm run pre.js && npm run post.js
+	并行脚本：npm run a.js & npm run b.js
+- npm script 需要考虑平台兼容性问题
+	un-script-os：针对不同平台进行不同的定制化脚本
+	cross-env：设置环境变量
 
 #### npm使用文章
 

@@ -1,6 +1,6 @@
 ---
-title: ES6-函数
-date: 2018-08-21 08:31:24
+title: <ES6>函数
+date: 2018-08-21 00:00:00
 tags: [ES6,js]
 categories: ES6
 ---

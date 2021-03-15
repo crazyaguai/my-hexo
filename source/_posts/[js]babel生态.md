@@ -1,5 +1,5 @@
 ---
-title: Babel生态
+title: <js>babel生态
 date: 2018-11-14 00:00:00
 tags: [ES6,js,Babel]
 categories: ES6

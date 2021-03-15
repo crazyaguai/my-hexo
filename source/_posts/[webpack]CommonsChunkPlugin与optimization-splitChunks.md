@@ -1,6 +1,6 @@
 ---
-title: webpack-CommonsChunkPlugin与optimization.splitChunks
-date: 2019-01-15 15:53:43
+title: <webpack>CommonsChunkPlugin与optimization-splitChunks
+date: 2019-01-15 00:00:00
 tags: [webpack]
 categories: webpack
 ---

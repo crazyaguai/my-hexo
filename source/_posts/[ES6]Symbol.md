@@ -1,6 +1,6 @@
 ---
-title: ES6-Symbol
-date: 2019-02-13 08:46:38
+title: <ES6>Symbol
+date: 2019-02-13 00:00:00
 tags: [ES6,js]
 categories: ES6
 ---

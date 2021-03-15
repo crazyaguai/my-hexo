@@ -1,6 +1,6 @@
 ---
-title: js-file相关
-date: 2019-01-31 20:00:49
+title: <js>file相关
+date: 2019-01-31 00:00:00
 tags: [js,文件,file]
 categories: file
 ---
