@@ -9,9 +9,9 @@ social:
 
 # navbar menu
 menu:
- archives: true
- tags: true
- categories: true
+  archives: true
+  tags: true
+  categories: true
 
 # rss_dir:
 
